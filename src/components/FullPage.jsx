@@ -126,7 +126,7 @@ export default class FullPage extends React.Component {
       return;
     }
 
-    const scrollDown = (evt.wheelDelta || -evt.deltaY || -evt.detail) < 0;
+    const scrollDown = (-evt.deltaY || -evt.detail) < 0;
     let { activeSlide } = this.state;
 
     if (scrollDown) {
